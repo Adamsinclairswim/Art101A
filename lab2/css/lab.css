@@ -1,23 +1,21 @@
 h1 {
-    color: rgb(225, 110, 21);
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    font-size: 32px;
-  }
-  
-  
-  p {
-    text-indent: 30px;
-    font-family: Helvetic, 'Times New Roman', Times, serif, Arial, "san serif";
-    background-color: rgb(231, 14, 14);
-    padding: 30px;
-    font-size: 140%;
-  }
-  
+  color: rgb(225, 110, 21);
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 32px;
+}
 
-  #content {
-    border: 2px dashed rgb(21, 147, 237);
-    padding: 10px;
-    margin: 10px;
-  }
+p {
+  text-indent: 30px;
+  font-family: Helvetica, Arial, 'Times New Roman', Times, serif, sans-serif;
+  background-color: rgb(231, 14, 14);
+  padding: 30px;
+  font-size: 140%;
+}
+
+#content {
+  border: 2px dashed rgb(21, 147, 237);
+  padding: 10px;
+  margin: 10px;
+}
