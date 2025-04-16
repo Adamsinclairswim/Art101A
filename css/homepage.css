@@ -24,3 +24,12 @@
 #links a:hover {
   color: #003366;
 }
+a {
+  color: #e74c3c; /* bright red */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #c0392b; /* darker red on hover */
+}
