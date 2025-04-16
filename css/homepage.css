@@ -1,6 +1,7 @@
 /* this css file will only style the homepage of our site */
 .swimmmingrelay {
-  margin: 10px;
-  max-width: 500px;
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
-
