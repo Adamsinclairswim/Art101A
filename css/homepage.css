@@ -5,3 +5,22 @@
   display: block;
   margin: 20px auto;
 }
+#links ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+#links li {
+  margin: 10px 0;
+}
+
+#links a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+#links a:hover {
+  color: #003366;
+}
