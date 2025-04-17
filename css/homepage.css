@@ -33,3 +33,33 @@ a {
 a:hover {
   color: #c0392b; /* darker red on hover */
 }
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.personal {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 400px;
+  color: #000033;
+  font-size: 1rem;
+}
+
+.celebration {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
