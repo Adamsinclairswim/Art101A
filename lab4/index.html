@@ -35,13 +35,48 @@
 					<p>The most complicated thing was trying to understand if I was required to actually code the games
 						or if I was just writing out comments. </p>
 			</div>
-
+			<h2>Checkers Game Screenshot</h2>
+			<img src="checkersgame.png" alt="Checkers Game" width="500">
 			<div class="minor-section">
 					<h2>Reflection</h2>
 					<p>I am happy with this assignment, I think it went very well and I put a lof of time and effort into it.
 						Even by going to a tutor to make sure I understood what was going on. </p>
 			</div>
-
+			<h2>Checkers Game Pseudocode</h2>
+			<pre>
+			// Set Up the Game
+			//   Create an 8x8 board with alternating dark/light squares
+			//   Place red and black pieces on the appropriate squares (first 3 rows for each)
+			//   Set player turn (e.g., red starts first)
+			//   Display initial board
+			
+			// Handle Player Turns
+			//   Highlight selectable pieces for the current player
+			//   Wait for player to select a piece
+			//   Highlight valid move options for that piece
+			//   Wait for player to choose a valid move
+			//   Move piece to new location
+			//   If the move is a jump, remove the captured opponent piece
+			//   If the piece reaches the last row, crown it a king
+			
+			// Enforce Game Rules
+			//   Only allow diagonal forward movement (unless king)
+			//   Enforce jumps when available (mandatory capture)
+			//   Prevent illegal moves
+			
+			// Check for End of Game
+			//   After each turn, check if a player has no legal moves
+			//     If so, declare the other player the winner
+			
+			// Switch Turns
+			//   After a move, switch the turn to the other player
+			//   If another jump is possible with the same piece, allow chained jump before switching
+			
+			// End the Game
+			//   Announce the winner
+			//   Offer option to restart or exit the game
+			</pre>
+			
 			<div class="minor-section">
 					<h2>Results</h2>
 					<div id="output"></div>
