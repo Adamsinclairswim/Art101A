@@ -48,13 +48,32 @@
 </head>
 <body>
   <h1>My Car Info</h1>
-  <p>Open the browser console to see details about my car!</p>
+  <div id="car-info"></div>
 
-  <script src="car.js"></script>
+  <script>
+    var make = "Subaru";
+    var model = "Crosstrek";
+    var color = "Silver";
+    var year = 2016;
+    var ownIt = true;
+
+    var currentYear = new Date().getFullYear();
+    var age = currentYear - year;
+
+    var output = `
+      <p>Make: ${make}</p>
+      <p>Model: ${model}</p>
+      <p>Color: ${color}</p>
+      <p>Year: ${year}</p>
+      <p>Do I own it? ${ownIt}</p>
+      <p>Age: ${age} years</p>
+    `;
+
+    document.getElementById("car-info").innerHTML = output;
+  </script>
 </body>
 </html>
-					<div id="output"></div>
-			</div>
+
 
 			
 		</section>
