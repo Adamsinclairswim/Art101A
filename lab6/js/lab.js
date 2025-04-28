@@ -1,21 +1,31 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/*
+ * Author: Adam Sinclair
+ * Date: 4/28/2025
+ * Description: This program creates an array listing my transportation methods 
+ * and an object describing my main ride, then outputs them neatly to the webpage.
+ */
 
-// Constants
+// Declare myTransport array
+var myTransport = ["car", "bus"];
 
-// Functions
+// Declare myMainRide object
+var myMainRide = {
+    make: "Subaru",
+    model: "Crosstrek",
+    color: "Silver",
+    year: 2016,
+    ownIt: true,
+    age: function() {
+        var currentYear = new Date().getFullYear();
+        return currentYear - this.year;
+    }
+};
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+// Output myTransport array neatly
+document.writeln("Getting around: " + myTransport + "<br>");
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// Output myMainRide object neatly
+document.writeln("My Main Ride: <pre>",
+    JSON.stringify(myMainRide, null, '\t'),
+    "</pre>");
 
-// let's get this party started
-main();
