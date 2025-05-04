@@ -1,9 +1,40 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
-
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9ff;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
   }
+  
+  /* Header */
+  h1 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Section Styling */
+  div {
+    background-color: #ffffff;
+    border: 2px solid #cce0ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Subheadings */
+  h2 {
+    color: #004080;
+    border-bottom: 1px solid #cce0ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph Styling */
+  p {
+    margin: 10px 0;
+  }
+  

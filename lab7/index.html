@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Lab 7 - JavaScript Challenge</title>
+  <link rel="stylesheet" href="css/lab.css">
 </head>
 <body>
 
   <h1>Lab 7: JavaScript Name Sorter</h1>
 
-  <!-- Challenge Section -->
   <div id="challenge">
     <h2>Challenge</h2>
-    <p>In this lab, we use JavaScript to prompt the user for their name, sort the letters, and display the result using DOM output methods.</p>
+    <p>We use JavaScript to prompt the user for their name, sort the letters, and display the result.</p>
   </div>
 
-  <!-- Problems Section -->
   <div id="problems">
     <h2>Problems</h2>
-    <p>One challenge was remembering that strings can't be sorted directly, so we had to convert them to arrays first. Also, ensuring good user interaction via prompt and display required thoughtful structure.</p>
+    <p>Using prompt on page load can be blocked, so we switched to using a button trigger.</p>
   </div>
 
-  <!-- Results Section -->
   <div id="results">
     <h2>Results</h2>
+    <button onclick="getSortedUserName()">Click here to sort your name</button>
+    <p id="output"></p>
     <script src="js/lab.js"></script>
   </div>
 
