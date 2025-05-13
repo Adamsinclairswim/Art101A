@@ -1,5 +1,5 @@
 /*
-   Requirements: jQuery must be loaded for this script to work.
+   Lab9
    Instructor: Wes Modes
    Author: Adam Sinclair
    Date: 2025
