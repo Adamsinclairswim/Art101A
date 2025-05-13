@@ -28,7 +28,8 @@ button {
   color: pink;
   font-weight: bold;
 }
-/* Back to Homepage Link */
+
+/* Back to Homepage link style */
 a {
   display: inline-block;
   margin-top: 30px;
