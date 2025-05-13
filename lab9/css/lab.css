@@ -1,46 +1,45 @@
-
+/* index.css - Lab 9 styles */
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 2em;
-  line-height: 1.6;
-  color: #333;
-}
-
-h1, h2 {
-  color: #2c3e50;
-  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 
 div {
-  background-color: #ffffff;
-  padding: 1em 1.5em;
-  margin: 1em auto;
-  max-width: 700px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
 }
 
-code {
-  background-color: #eef;
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-size: 90%;
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.home-button {
+/* Special class applied via JS */
+.special {
+  background-color: lavender;
+  border: dotted 50px red;
+  color: pink;
+  font-weight: bold;
+}
+/* Back to Homepage Link */
+a {
   display: inline-block;
-  margin-top: 1em;
-  padding: 0.5em 1em;
+  margin-top: 30px;
+  padding: 10px 16px;
   background-color: #0077cc;
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
-.home-button:hover {
+a:hover {
   background-color: #005fa3;
 }
