@@ -1,8 +1,6 @@
 /*
    lab.js - This JavaScript/jQuery script appends random sentences to an output div
-
    Requirements: jQuery must be loaded for this script to work.
-
    Author: Adam Sinclair
    Date: 2025
 */

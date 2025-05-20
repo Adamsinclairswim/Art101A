@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+#output .text {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+input, button {
+  margin-top: 15px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px;
+  background: #ccc;
+  border-radius: 8px;
+  color: black;
+  transition: background 0.3s ease;
+}
+
+.home-button:hover {
+  background: #bbb;
+}
