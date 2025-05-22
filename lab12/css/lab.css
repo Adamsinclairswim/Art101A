@@ -1,0 +1,83 @@
+/* General Page Styling */
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Section Styling */
+#challenge, #problems, #results {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Output Style */
+#output p {
+  font-weight: bold;
+  color: #2a7a2e;
+  background-color: #e6ffe6;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Input Field & Button */
+input[type="text"] {
+  padding: 8px;
+  width: 60%;
+  max-width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #5c9ded;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #3c7dcf;
+}
+
+/* Return Link */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}

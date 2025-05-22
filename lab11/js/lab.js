@@ -13,14 +13,14 @@ function sortString(inputString) {
   return inputString.split('').sort().join('');
 }
 
-// Click listener for submit button
+
 $("#submit").click(function() {
-  // Get value from the input field
+  
   const userName = $("#user-name").val();
 
-  // Sort the characters in the name
+ 
   const userNameSorted = sortString(userName);
 
-  // Output the sorted name in a styled div
+  
   $("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
 });
