@@ -1,27 +1,29 @@
 /*
   Author: Adam Sinclair
   Date: 2025
-  Lab 13 - FizzBuzzBoom
-  This script loops through numbers 1–200 and appends a string to the #output div depending
-  on whether the number is divisible by 3 (Fizz), 5 (Buzz), 7 (Boom), or any combo.
+  Lab 13 - Random FizzBuzzBoom
+  When the button is clicked, selects 20 random numbers from 1–200
+  and outputs Fizz (3), Buzz (5), Boom (7), or combinations.
 */
 
-function fizzBuzzBoom() {
+function fizzBuzzBoomRandom() {
   let outputStr = "";
 
-  for (let i = 1; i <= 200; i++) {
+  for (let i = 0; i < 20; i++) {
+    let num = Math.floor(Math.random() * 200) + 1;
     let str = "";
 
-    if (i % 3 === 0) str += "Fizz";
-    if (i % 5 === 0) str += "Buzz";
-    if (i % 7 === 0) str += "Boom";
-    if (str === "") str = i;
+    if (num % 3 === 0) str += "Fizz";
+    if (num % 5 === 0) str += "Buzz";
+    if (num % 7 === 0) str += "Boom";
+    if (str === "") str = num;
 
-    outputStr += str + "<br>";
+    outputStr += `<p>${num}: ${str}</p>`;
   }
 
   $("#output").html(outputStr);
 }
 
-// Run the function
-fizzBuzzBoom();
+$("#run-button").click(function () {
+  fizzBuzzBoomRandom();
+});
