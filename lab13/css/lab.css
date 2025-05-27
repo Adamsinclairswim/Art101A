@@ -29,8 +29,8 @@ h2 {
   margin: 5px 0;
 }
 
-#home-button {
-  margin-top: 30px;
+#run-button, #home-button {
+  margin-top: 20px;
   padding: 10px 20px;
   background-color: #004080;
   color: #fff;
@@ -41,6 +41,6 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
-#home-button:hover {
+#run-button:hover, #home-button:hover {
   background-color: #002f5e;
 }

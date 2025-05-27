@@ -1,38 +1,31 @@
 /*
   Author: Adam Sinclair
   Date: 2025
-  Lab 13 - FizzBuzzBoom (Random Order)
-  When the button is clicked, shuffles numbers 1–200 and applies FizzBuzzBoom logic.
+  Lab 13 - FizzBuzzBoom (Ordered)
+  Loops from 1–200 and applies Fizz/Buzz/Boom logic based on multiples.
 */
 
-// Fisher-Yates shuffle to randomize the array
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+function fizzBuzzBoom() {
+  $("#output").html(""); // Clear previous output
+
+  for (let i = 1; i <= 200; i++) {
+    let result = "";
+
+    if (i % 3 === 0) result += "Fizz";
+    if (i % 5 === 0) result += "Buzz";
+    if (i % 7 === 0) result += "Boom";
+
+    if (result !== "") {
+      result += "!"; 
+    } else {
+      result = i; 
+    }
+
+    $("#output").append(`<p>${i}: ${result}</p>`);
   }
-  return array;
 }
 
-function fizzBuzzBoomRandomOrder() {
-  let numbers = Array.from({ length: 200 }, (_, i) => i + 1);
-  let shuffled = shuffle(numbers);
-  let outputStr = "";
-
-  for (let num of shuffled) {
-    let str = "";
-
-    if (num % 3 === 0) str += "Fizz";
-    if (num % 5 === 0) str += "Buzz";
-    if (num % 7 === 0) str += "Boom";
-    if (str === "") str = num;
-
-    outputStr += `<p>${num}: ${str}</p>`;
-  }
-
-  $("#output").html(outputStr);
-}
-
-$("#run-button").click(function () {
-  fizzBuzzBoomRandomOrder();
+// Wait for DOM and attach event
+$(document).ready(function () {
+  $("#run-button").click(fizzBuzzBoom);
 });
