@@ -1,16 +1,25 @@
 /*
   Author: Adam Sinclair
   Date: 2025
-  Lab 13 - Random FizzBuzzBoom
-  When the button is clicked, selects 20 random numbers from 1–200
-  and outputs Fizz (3), Buzz (5), Boom (7), or combinations.
+  Lab 13 - FizzBuzzBoom (Random Order)
+  When the button is clicked, shuffles numbers 1–200 and applies FizzBuzzBoom logic.
 */
 
-function fizzBuzzBoomRandom() {
+// Fisher-Yates shuffle to randomize the array
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function fizzBuzzBoomRandomOrder() {
+  let numbers = Array.from({ length: 200 }, (_, i) => i + 1);
+  let shuffled = shuffle(numbers);
   let outputStr = "";
 
-  for (let i = 0; i < 20; i++) {
-    let num = Math.floor(Math.random() * 200) + 1;
+  for (let num of shuffled) {
     let str = "";
 
     if (num % 3 === 0) str += "Fizz";
@@ -25,5 +34,5 @@ function fizzBuzzBoomRandom() {
 }
 
 $("#run-button").click(function () {
-  fizzBuzzBoomRandom();
+  fizzBuzzBoomRandomOrder();
 });
