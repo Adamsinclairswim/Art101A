@@ -1,13 +1,13 @@
 /*
-   lab.js - This JavaScript/jQuery script appends random sentences to an output div
-   Requirements: jQuery must be loaded for this script to work.
-   Author: Adam Sinclair
-   Date: 2025
+lab.js - This JavaScript/jQuery script appends random sentences to an output div
+Requirements: jQuery must be loaded for this script to work.
+Author: Adam Sinclair
+Date: 2025
 */
 
 // Array of real example sentences
 const sentences = [
-  "HI how are you doing?",
+  "Hi how are you doing?",
   "I love learning JavaScript it's fun and powerful.",
   "Santa Cruz is such a beautiful place to study and train.",
   "Let's go for a bike ride this weekend!",
@@ -19,16 +19,19 @@ const sentences = [
   "This lab is a great way to experiment with jQuery."
 ];
 
-
-
 // Function to get a random sentence
 function generateRandomText() {
   const index = Math.floor(Math.random() * sentences.length);
   return sentences[index];
 }
 
-// Click listener for button
+// Click listener for "Make Conversation" button
 $("#make-convo").click(function () {
   const newText = generateRandomText();
   $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+});
+
+// 🔴 Click listener for "Clear" button
+$("#clear-convo").click(function () {
+  $("#output").empty();
 });
