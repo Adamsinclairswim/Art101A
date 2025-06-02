@@ -1,5 +1,5 @@
 // lab15.js - Using jQuery and AJAX to get API data
-// Author: Your Name
+// Author: Adam sinclair
 // Date: 2025-06-02
 
 $("#activate").click(function(){
