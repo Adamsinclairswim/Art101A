@@ -1,46 +1,54 @@
+/* Basic lab style for ART101 */
+
 body {
-  background-color: #e0f0ff;
-  font-family: "Helvetica", sans-serif;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  max-width: 800px;
+  margin: 40px auto;
   padding: 20px;
-  color: #333;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
 }
 
 h1 {
-  color: #004080;
-  border-bottom: 2px solid #004080;
-  padding-bottom: 10px;
+  color: #222;
+  text-align: center;
 }
 
 h2 {
-  color: #004080;
-  margin-top: 20px;
+  color: #444;
+  margin-top: 30px;
 }
 
-#challenge, #problems, #results, #output {
-  background-color: #ffffff;
-  border: 2px solid #aaccee;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-  padding: 15px;
-  margin-top: 15px;
+p {
+  line-height: 1.6;
 }
 
-#output p {
-  margin: 5px 0;
-}
-
-#run-button, #home-button {
-  margin-top: 20px;
+button {
   padding: 10px 20px;
-  background-color: #004080;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  background-color: #0057b7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
-#run-button:hover, #home-button:hover {
-  background-color: #002f5e;
+button:hover {
+  background-color: #0041a3;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e6f2ff;
+  border-left: 5px solid #0057b7;
+  border-radius: 5px;
 }
