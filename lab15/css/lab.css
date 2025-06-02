@@ -1,0 +1,46 @@
+body {
+  background-color: #e0f0ff;
+  font-family: "Helvetica", sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  color: #004080;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #004080;
+  margin-top: 20px;
+}
+
+#challenge, #problems, #results, #output {
+  background-color: #ffffff;
+  border: 2px solid #aaccee;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-top: 15px;
+}
+
+#output p {
+  margin: 5px 0;
+}
+
+#run-button, #home-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#run-button:hover, #home-button:hover {
+  background-color: #002f5e;
+}
