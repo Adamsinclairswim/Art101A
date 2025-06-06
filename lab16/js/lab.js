@@ -1,21 +1,30 @@
-// lab.js
+// Wait until the document is ready
 $(document).ready(function() {
-    // Make an API call to XKCD
-    $.ajax({
-        url: "https://xkcd.com/info.0.json", // API endpoint for XKCD comic
-        type: "GET",
-        dataType: "json", // Expecting JSON data from the API
-        success: function(comicObj) {
-            // On success, display the comic
-            var comicHTML = `
-                <h2>${comicObj.title}</h2>
-                <img src="${comicObj.img}" alt="${comicObj.alt}" title="${comicObj.alt}">
-            `;
-            $('#output').html(comicHTML); // Insert the comic into the output div
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            // Handle errors
-            console.log("Error:", textStatus, errorThrown);
-        }
-    });
+  console.log("Lab 16: XKCD JSON API");
+
+  // URL to fetch the latest XKCD comic via AllOrigins proxy
+  const apiURL = "https://api.allorigins.win/raw?url=https://xkcd.com/info.0.json";
+
+  // Make the AJAX request
+  $.ajax({
+    url: apiURL,
+    method: "GET",
+    success: function(data) {
+      console.log("Data received:", data);
+
+      // Build HTML with comic info
+      const comicHTML = `
+        <h3>${data.title}</h3>
+        <img src="${data.img}" alt="${data.alt}" width="500">
+        <p><em>${data.alt}</em></p>
+      `;
+
+      // Inject the HTML into the page
+      $("#output").html(comicHTML);
+    },
+    error: function(err) {
+      console.error("Error loading comic:", err);
+      $("#output").html("<p>Sorry, something went wrong fetching the comic.</p>");
+    }
+  });
 });
