@@ -1,6 +1,4 @@
-// lab.js16
-// Adam Sinclair
-// june 5th 2025
+// lab.js
 $(document).ready(function() {
     // Make an API call to XKCD
     $.ajax({
